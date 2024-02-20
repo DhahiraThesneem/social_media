@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Social links profile</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            transparent: 'transparent',
+            current: 'currentColor',
+            'font-color-white': '#ffffff', //hsl(0, 0%, 100%);
+            'highlight': '#c5f82a', //hsl(75, 94%, 57%);
+            'button-color': '#333333', //hsl(0, 0%, 20%);
+            'card-color': '#1f1f1f', //hsl(0, 0%, 12%);
+            'gray-color': '#141414', //hsl(0, 0%, 8%);
+          },
+          fontSize: {
+            'smaller-title': '7px', // Define a custom font size for place
+            'smaller-place': '8.4px',
+            'smaller': '10px',
+          },
+          fontFamily: {
+            'sans': ["Inter", 'sans-serif']
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    :root {
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+  </style>
+</head>
+<body class="bg-gray-color font-sans font-normal w-screen h-screen">
+  <main class="flex justify-center items-center w-full h-full">
+    <div class="flex flex-col justify-center items-center 
+    max-w-72 bg-card-color self-center rounded-lg px-8 py-8 space-y-4">
+      <img class="rounded-full w-14 h-14" 
+      src="./assets/images/avatar-jessica.jpeg" alt="Jessica">
+      <div class="flex flex-col items-center m-0 space-y-1">
+        <h1 class="text-font-color-white text-base font-semibold">
+          Jessica Randall</h1>
+        <p class="text-highlight text-smaller-place fond-extrabold my-0">
+          London, United Kingdom</p>
+      </div>
+      <p class="text-font-color-white text-smaller-place font-light">
+        "Front-end developer and avid reader."</p>
+      <div class="flex flex-col space-y-2.5">
+        <button class="bg-button-color hover:bg-highlight focus:outline-none
+        focus:ring focus:ring-highlight active:bg-highlight
+        border-none text-font-color-white hover:text-gray-color
+        rounded-md text-smaller font-semibold py-2 px-16">GitHub</button>
+        <button class="bg-button-color hover:bg-highlight focus:outline-none
+        focus:ring focus:ring-highlight active:bg-highlight
+        border-none text-font-color-white hover:text-gray-color
+        rounded-md text-smaller font-semibold py-2 px-16">Frontend Mentor</button>
+        <button class="bg-button-color hover:bg-highlight focus:outline-none
+        focus:ring focus:ring-highlight active:bg-highlight
+        border-none text-font-color-white hover:text-gray-color
+        rounded-md text-smaller font-semibold py-2 px-16">LinkedIn</button>
+        <button class="bg-button-color hover:bg-highlight focus:outline-none
+        focus:ring focus:ring-highlight active:bg-highlight
+        border-none text-font-color-white hover:text-gray-color
+        rounded-md text-smaller font-semibold py-2 px-16">Twitter</button>
+        <button class="bg-button-color hover:bg-highlight focus:outline-none
+        focus:ring focus:ring-highlight active:bg-highlight
+        border-none text-font-color-white hover:text-gray-color
+        rounded-md text-smaller font-semibold py-2 px-16">Instagram</button>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
